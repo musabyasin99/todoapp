@@ -23,6 +23,7 @@ const EditTask = ({ tasks, setTasks }) => {
       id,
       title: editTitle,
       info: editInfo,
+      dateTime: task.dateTime,
     };
     const res = tasks.map((task) => (task.id === id ? updatedTask : task));
     localStorage.setItem("tasklist", JSON.stringify(res));
