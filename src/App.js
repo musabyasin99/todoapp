@@ -52,7 +52,6 @@ function App() {
       <main>
         <Routes>
           <Route
-            exact
             path="/"
             element={
               <TaskList
