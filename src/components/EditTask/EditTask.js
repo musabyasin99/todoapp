@@ -29,7 +29,7 @@ const EditTask = ({ tasks, setTasks }) => {
     setTasks(res);
     setEditTitle("");
     setEditInfo("");
-    history("/");
+    history("/todoapp");
   };
   return (
     <form
