@@ -23,12 +23,12 @@ const NavBar = () => {
             <FaIcon.FaHome className="icon" />
           </li>
         </Link>
-        <Link to="/add">
+        <Link to="/todoapp/add">
           <li className="navItem btn btn-danger" onClick={toggle}>
             <FaIcon.FaPlus className="icon" />
           </li>
         </Link>
-        <Link to="/info">
+        <Link to="/todoapp/info">
           <li className="navItem btn btn-danger" onClick={toggle}>
             <FaIcon.FaInfo className="icon" />
           </li>

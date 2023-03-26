@@ -52,7 +52,7 @@ function App() {
       <main>
         <Routes>
           <Route
-            path=""
+            path="/"
             element={
               <TaskList
                 tasks={tasks}
@@ -62,7 +62,7 @@ function App() {
             }
           />
           <Route
-            path="/add"
+            path="/todoapp/add"
             element={
               <AddTask
                 title={title}
@@ -74,14 +74,14 @@ function App() {
             }
           />
           <Route
-            path="/edit/:id"
+            path="/todoapp/edit/:id"
             element={<EditTask tasks={tasks} setTasks={setTasks} />}
           />
           <Route
-            path="/task/:id"
+            path="/todoapp/task/:id"
             element={<ViewTask tasks={tasks} handleDelete={handleDelete} />}
           />
-          <Route path="/info" element={<h1>Information !!</h1>} />
+          <Route path="/todoapp/info" element={<h1>Information !!</h1>} />
         </Routes>
       </main>
       <Footer />
