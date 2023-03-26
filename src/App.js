@@ -27,7 +27,7 @@ function App() {
     const updatedList = tasklist.filter((task) => task.id !== id);
     setTasks(updatedList);
     localStorage.setItem("tasklist", JSON.stringify(updatedList));
-    history("/");
+    history("");
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,7 +44,7 @@ function App() {
     localStorage.setItem("tasklist", JSON.stringify(updatedList));
     setTitle("");
     setInfo("");
-    history("/");
+    history("");
   };
   return (
     <>
@@ -52,7 +52,7 @@ function App() {
       <main>
         <Routes>
           <Route
-            path="/"
+            path=""
             element={
               <TaskList
                 tasks={tasks}
