@@ -18,7 +18,7 @@ const NavBar = () => {
         className={sidebar ? "toggle active" : "toggle"}
       ></button>
       <ul className={sidebar ? "navList active" : "navList"}>
-        <Link to="/">
+        <Link to="/todoapp">
           <li className="navItem btn btn-danger" onClick={toggle}>
             <FaIcon.FaHome className="icon" />
           </li>

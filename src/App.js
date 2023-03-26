@@ -27,7 +27,7 @@ function App() {
     const updatedList = tasklist.filter((task) => task.id !== id);
     setTasks(updatedList);
     localStorage.setItem("tasklist", JSON.stringify(updatedList));
-    history("");
+    history("/todoapp");
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,7 +44,7 @@ function App() {
     localStorage.setItem("tasklist", JSON.stringify(updatedList));
     setTitle("");
     setInfo("");
-    history("");
+    history("/todoapp");
   };
   return (
     <>
@@ -53,6 +53,20 @@ function App() {
         <Routes>
           <Route
             path="/"
+            element={
+              <h1
+                style={{
+                  color: "white",
+                  textAlign: "center",
+                  marginTop: "30vh",
+                }}
+              >
+                Welcome ...!!
+              </h1>
+            }
+          />
+          <Route
+            path="/todoapp"
             element={
               <TaskList
                 tasks={tasks}
