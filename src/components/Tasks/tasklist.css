@@ -1,0 +1,51 @@
+.listWrapper {
+  position: relative;
+  padding: 5px;
+  background: rgb(49, 9, 95);
+  border-radius: 24px;
+  width: 95%;
+  height: calc(100vh - 150px);
+  margin: 0 auto;
+}
+.listWrapper h3 {
+  padding: 10px 0;
+  width: 150px;
+  border-radius: 24px;
+  background: rgb(59, 8, 80);
+  font-weight: 200;
+  margin: 0 auto;
+  color: aliceblue;
+  text-align: center;
+  cursor: default;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 100vw;
+}
+.tasklistWrap {
+  height: 70%;
+  background: rgb(63, 26, 105);
+  overflow: auto;
+  border-radius: 36px 0 0 36px;
+  padding: 10px;
+}
+.taskList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5px;
+}
+.task {
+  width: 95%;
+  background: white;
+}

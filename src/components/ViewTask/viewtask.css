@@ -1,0 +1,50 @@
+.taskWrap {
+  position: relative;
+  font-family: monospace;
+  padding: 10px;
+  overflow: auto;
+  width: 60%;
+  margin: 0 auto;
+  cursor: default;
+}
+
+.taskWrap .top {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background: rgb(250, 222, 169);
+  border-radius: 12px;
+}
+.taskWrap .top .taskTitle {
+  font-size: 1.3rem;
+}
+.taskWrap .top .dateTime {
+  font-weight: 500;
+  font-size: 0.8rem;
+  align-self: flex-end;
+}
+.taskWrap .info {
+  font-size: 0.9rem;
+  height: calc(50vh - 60px);
+  background: wheat;
+  margin-block: 10px;
+  padding: 20px;
+  border-radius: 12px;
+  overflow: auto;
+}
+
+.taskWrap button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media screen and (max-width: 998px) {
+  .taskWrap {
+    width: 100%;
+  }
+}

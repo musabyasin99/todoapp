@@ -1,0 +1,74 @@
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-color: transparent;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.toggle:hover {
+  background: black;
+}
+.toggle::before {
+  content: "";
+  position: absolute;
+  transform: translateY(-10px);
+  width: 30px;
+  height: 3px;
+  border-radius: 12px;
+  background: white;
+  transition: all 0.3s ease-in;
+}
+.toggle.active::before {
+  transform: translateY(0) rotate(45deg);
+}
+.toggle::after {
+  content: "";
+  position: absolute;
+  transform: translateY(10px);
+  width: 30px;
+  height: 3px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 -10px 0 green;
+  transition: all 0.3s ease-in;
+}
+.toggle.active::after {
+  transform: rotate(-45deg);
+  box-shadow: 0 0 0 transparent;
+}
+.navList {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-200%);
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  background: rgb(45, 1, 63);
+  backdrop-filter: blur(5px);
+  border-radius: 0 0 6px 6px;
+  z-index: -2;
+  transition: all 0.5s ease;
+}
+.navList.active {
+  z-index: 2;
+  transform: translateY(0);
+}
+.navItem .icon {
+  font-size: 1.2rem;
+  color: white;
+  transition: all 0.2s;
+}
+.navItem:hover > .icon {
+  color: black;
+}
