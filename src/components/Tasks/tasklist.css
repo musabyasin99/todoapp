@@ -3,9 +3,10 @@
   padding: 5px;
   background: rgb(49, 9, 95);
   border-radius: 24px;
-  width: 95%;
+  width: 60%;
   height: calc(100vh - 150px);
   margin: 0 auto;
+  margin-top: 15px;
 }
 .listWrapper h3 {
   padding: 10px 0;
@@ -48,4 +49,10 @@
 .task {
   width: 95%;
   background: white;
+}
+
+@media screen and (max-width: 998px) {
+  .listWrapper {
+    width: 95%;
+  }
 }

@@ -5,7 +5,10 @@
   overflow: auto;
   width: 60%;
   margin: 0 auto;
+  background: rgba(128, 0, 128, 0.2);
   cursor: default;
+  margin-top: 20px;
+  border-radius: 12px;
 }
 
 .taskWrap .top {

@@ -1,0 +1,56 @@
+.alertBoxWrap {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
+  padding: 10px;
+  z-index: 10;
+  transform: translateY(-110%);
+  transition: 0.3s all ease;
+}
+.alertBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #000;
+  width: 30vw;
+  border-top: 4px solid green;
+  border-bottom: 1px solid darkred;
+  border-radius: 12px;
+}
+
+.alertBox .message {
+  color: orangered;
+}
+
+.active {
+  transform: translateY(0%);
+}
+
+@media screen and (max-width: 998px) {
+  .alertBox {
+    width: 75vw;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-200%);
+  }
+  25% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-200%);
+  }
+}

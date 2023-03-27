@@ -6,7 +6,7 @@ import * as FaIcon from "react-icons/fa";
 
 import "./edittask.css";
 
-const EditTask = ({ tasks, setTasks }) => {
+const EditTask = ({ tasks, setTasks, message, setMessage, viewBox }) => {
   const [editTitle, setEditTitle] = useState("");
   const [editInfo, setEditInfo] = useState("");
   const history = useNavigate();
@@ -31,6 +31,8 @@ const EditTask = ({ tasks, setTasks }) => {
     setEditTitle("");
     setEditInfo("");
     history("/todoapp");
+    setMessage(`Task Edited !`);
+    viewBox();
   };
   return (
     <form
